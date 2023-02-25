@@ -6,7 +6,7 @@ function MyRecipesComponent({ label, image, calories, ingredients }) {
       </div>
 
       <div className="container">
-        <img src={image} />
+        <img src={image}alt=""/>
       </div>
 
       <ul className="list">
@@ -14,7 +14,7 @@ function MyRecipesComponent({ label, image, calories, ingredients }) {
           <li>
             <img
               src="https://cdn-icons-png.flaticon.com/512/1102/1102355.png?w=740&t=st=1676549105~exp=1676549705~hmac=b8b0e8de48df831ad34546980650af9c694384761c4d638b16d1c370aa975380"
-              className="icon"
+              className="icon" alt="icon"
             />
             {ingredient}
           </li>

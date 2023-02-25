@@ -20,7 +20,7 @@ function App() {
       setMyRecipes(data.hits);
     };
     getRecipes();
-  }, [wordSubmitted])  /* кликаем на enter  и вызываем useEffect */
+  }, [wordSubmitted]); /* кликаем на enter  и вызываем useEffect */
 
   const myRecipeSearch = (e) => {
     setMySearch(e.target.value);
@@ -40,20 +40,18 @@ function App() {
         <h1>Recipe Book</h1>
       </div>
 
-      <div className="container">
-        <form onSubmit={finalSearch}>
-          <input
-            className="search"
-            placeholder="Search..."
-            onChange={myRecipeSearch}
-            value={mySearch}
-          ></input>
-        </form>
+      <form className="container" onSubmit={finalSearch}>
+        <input
+          className="search"
+          placeholder="Search..."
+          onChange={myRecipeSearch}
+          value={mySearch}
+        ></input>
 
-        <div className="container">
+        <div>
           <button className="btn">Search</button>
         </div>
-      </div>
+      </form>
 
       <div>
         {myRecipes.map((element) => (

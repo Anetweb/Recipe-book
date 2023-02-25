@@ -30,7 +30,8 @@ img {
 }
 
 .search {
-  width: 100%;
+  width: 200px
+  ;
   padding: 12px 24px;
   background-color: transparent;
   font-size: 14px;
